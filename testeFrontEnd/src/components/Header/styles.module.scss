@@ -1,0 +1,117 @@
+@use "../../styles/variables.scss";
+
+.header {
+  padding: 0px 80px;
+  .topHeader {
+    padding: 6px 258px;
+    display: flex;
+    column-gap: 119px;
+    font-size: variables.$font-size-sm;
+    div {
+      display: flex;
+      align-items: center;
+      column-gap: 9px;
+      p {
+        font-weight: variables.$font-weight-medium;
+        margin-top: 1px;
+      }
+      span {
+        font-weight: variables.$font-weight-semi-bold;
+        color: variables.$secondary-blue;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .midHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px;
+    .logo {
+      width: 139px;
+      height: 41.3px;
+    }
+
+    .searchBox {
+      margin-left: 186px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: variables.$off-white;
+      height: 48px;
+      width: 630px;
+      border-radius: 10px;
+      padding: 0px 16px;
+      img {
+        width: 28px;
+        height: 28px;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      input {
+        border: none;
+        background-color: transparent;
+        flex: 1;
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+
+    .navItems {
+      margin-left: 109px;
+      display: flex;
+      align-items: center;
+      column-gap: 32px;
+      .groupIcon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .divisor {
+    height: 1px;
+    width: 100%;
+    background-color: variables.$light-gray;
+  }
+
+  .bottomHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 16px 0px variables.$header-box-shadow;
+    font-size: variables.$font-size-sm;
+    padding: 12px 70px 12px 69px;
+    font-weight: variables.$font-weight-semi-bold;
+    ul {
+      // column-gap: 91px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      width: max-content;
+      column-gap: 91px;
+
+      li {
+        letter-spacing: 0%;
+        &:hover {
+          a,
+          svg path {
+            color: variables.$secondary-blue;
+            stroke: variables.$secondary-blue;
+          }
+        }
+
+        a {
+          letter-spacing: 0%;
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+        }
+      }
+    }
+  }
+}

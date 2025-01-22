@@ -1,0 +1,61 @@
+@use "../../styles/variables.scss";
+
+.heroSection {
+  max-width: 1440px;
+  height: 390px;
+  background-image: url("../../assets/heroSectionBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px 0px;
+
+  .heroTitle {
+    padding: 78px 0px 0px 81px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: variables.$pure-white;
+    width: 966px;
+    background: linear-gradient(
+      to left,
+      transparent 0%,
+      variables.$blackOpacity 85%
+    );
+    height: 100%;
+    h1 {
+      font-size: variables.$font-size-xxlg;
+      font-weight: variables.$font-weight-semi-bold;
+      line-height: 50px;
+      max-width: 822px;
+    }
+
+    p {
+      font-size: variables.$font-size-xlg;
+      font-weight: variables.$font-weight-regular;
+      span {
+        font-weight: variables.$font-weight-bold;
+        color: variables.$accent-yellow;
+      }
+    }
+
+    a {
+      width: 206px;
+      height: 50px;
+      border-radius: 5px;
+      background-color: variables.$accent-yellow;
+      color: variables.$dark-purple;
+      font-size: variables.$font-size-g;
+      font-weight: variables.$font-weight-semi-bold;
+      text-align: center;
+      margin: 24px 0px 0px 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: variables.$dark-purple;
+        color: variables.$accent-yellow;
+        transition: background-color 300ms ease-in-out;
+      }
+    }
+  }
+}

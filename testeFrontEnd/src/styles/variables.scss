@@ -1,27 +1,39 @@
 // Paleta de Cores
-$primary-blue: #3442B5;
-$secondary-blue: #3019B2;
-$accent-yellow: #F7CA11;
-$dark-purple: #271C47;
-$text-gray: #9F9F9F;
-$dark-gray: #3F3F40;
-$pure-white: #FFFFFF;
-$light-gray: #F0F0F0;
-$off-white: #F6F5F2;
+$primary-blue: #3442b5;
+$secondary-blue: #3019b2;
+$accent-yellow: #f7ca11;
+$dark-purple: #271c47;
+$text-gray: #9f9f9f;
+$dark-gray: #3f3f40;
+$dark-gray-showcase: #3b3b3b;
+$pure-white: #ffffff;
+$light-gray: #f0f0f0;
+$box-gray: #f4f4f4;
+$old-price-gray: #808080;
+$off-white: #f6f5f2;
+$border-color: #BDBDBD;
 $header-box-shadow: hsla(46, 50%, 15%, 0.12);
-$blackOpacity: hsla(0, 0%, 0%, 0.80);
+$box-shadow: hsla(0, 0%, 0%, 0.13);
+$box-shadow-22: hsla(0, 0%, 0%, 0.22);
+$blackOpacity: hsla(0, 0%, 0%, 0.8);
+$dark-liver: #4e4e4e;
 
 // Tipografia
-$font-family: 'Poppins', sans-serif;
+$font-family: "Poppins", sans-serif;
 
 // Tamanhos de Fonte
 $font-size-sm: 12px;
 $font-size-md: 14px;
+$font-size-mdg: 15px;
 $font-size-g: 16px;
+$font-size-gg: 20px;
+$font-size-xgg: 30px;
 $font-size-xlg: 32px;
+$font-size-lg: 40px;
 $font-size-xxlg: 48px;
 // Pesos de Fonte
+$font-weight-light: 300;
+$font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
-$font-weight-regular: 400;
 $font-weight-bold: 700;

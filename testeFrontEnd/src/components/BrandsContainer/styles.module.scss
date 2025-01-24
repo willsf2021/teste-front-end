@@ -1,0 +1,20 @@
+@use "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-bottom: 90px;
+  h2 {
+    font-weight: variables.$font-weight-bold;
+    font-size: variables.$font-size-xgg;
+    color: variables.$secondary-blue;
+    text-align: center;
+  }
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 42px;
+  }
+}

@@ -1,0 +1,20 @@
+@use "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: variables.$pure-white;
+  width: 211px;
+  height: 211px;
+  box-shadow: 0px 7px 20px 0px variables.$box-shadow;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+  }
+  img {
+    width: 117px;
+  }
+}

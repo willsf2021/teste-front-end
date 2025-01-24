@@ -1,0 +1,9 @@
+@use "../../styles/variables.scss";
+
+.categoryContainer {
+  display: flex;
+  column-gap: 42px;
+  width: 100%;
+  justify-content: center;
+  margin: 39px 0px 90px 0px;
+}

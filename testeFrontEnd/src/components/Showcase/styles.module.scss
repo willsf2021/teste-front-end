@@ -1,0 +1,60 @@
+@use "../../styles/variables.scss";
+
+.showcaseContainer {
+  display: flex;
+  flex-direction: column;
+  color: variables.$dark-gray;
+  background-color: transparent;
+  // row-gap: 24px;
+  align-items: center;
+  .title {
+    display: flex;
+    width: 1138px;
+    align-items: center;
+    column-gap: 34px;
+    margin-bottom: 2px;
+    // background-color: red;
+    h2 {
+      font-weight: variables.$font-weight-bold;
+      font-size: variables.$font-size-xgg;
+      color: variables.$secondary-blue;
+      min-width: 350px;
+      margin-top: 10px;
+      line-height: 46px;
+    }
+  }
+  .divisor {
+    height: 1px;
+    width: 100%;
+    background-color: variables.$light-gray;
+  }
+
+  ul {
+    border: 1px solid variables.$border-color;
+    border-left: none;
+    display: flex;
+    max-width: 1258px;
+    margin-bottom: 24px;
+    li {
+      color: variables.$dark-gray-showcase;
+      padding: 12px 0px;
+      border-left: 1px solid variables.$border-color;
+      width: 214.17px;
+      text-align: center;
+      cursor: pointer;
+      font-size: variables.$font-size-g;
+      font-weight: variables.$font-weight-regular;
+      &:hover {
+        font-weight: variables.$font-weight-semi-bold;
+        color: variables.$secondary-blue;
+      }
+    }
+  }
+}
+
+.viewAll {
+  font-size: variables.$font-size-mdg;
+  font-weight: variables.$font-weight-bold;
+  margin: 4px 0px 24px;
+  cursor: pointer;
+}

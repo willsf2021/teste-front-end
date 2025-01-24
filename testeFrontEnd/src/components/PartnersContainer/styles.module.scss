@@ -1,0 +1,10 @@
+@use "../../styles/variables.scss";
+
+.container {
+  display: flex;
+  column-gap: 13px;
+  margin: 90px 0px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}

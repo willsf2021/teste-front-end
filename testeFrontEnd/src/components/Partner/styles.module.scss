@@ -1,0 +1,45 @@
+@use "../../styles/variables.scss";
+
+.partnerContainer {
+  width: 634px;
+  height: 350px;
+  background: url(../../assets/bannerPartners.png);
+  border-radius: 15px;
+}
+
+.textMask {
+  width: 100%;
+  padding: 114px 0px 40px 44.18px;
+  background: linear-gradient(to bottom, transparent 0%, black 85%);
+  border-radius: 15px;
+  h2 {
+    font-size: variables.$font-size-lg;
+    color: variables.$pure-white;
+  }
+  p {
+    font-size: variables.$font-size-g;
+    font-weight: variables.$font-weight-regular;
+    color: variables.$pure-white;
+    max-width: 300px;
+    margin: 8px 0px 32px;
+  }
+  a {
+    width: 144.69px;
+    height: 48px;
+    border-radius: 5px;
+    background-color: variables.$accent-yellow;
+    color: variables.$dark-purple;
+    font-size: variables.$font-size-g;
+    font-weight: variables.$font-weight-semi-bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: variables.$dark-purple;
+      color: variables.$accent-yellow;
+      transition: background-color 300ms ease-in-out;
+    }
+  }
+}

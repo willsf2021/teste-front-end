@@ -61,5 +61,22 @@ Este repositório contém o teste técnico para a vaga de estágio Frontend na *
 
 #### Os arquivos de produção estarão na pasta dist/.
 
+## Observação Importante sobre o Fetch de Dados
+
+Este projeto consome dados de uma API externa que possui restrições de **CORS**. Para resolver esse problema, utilizei o serviço [CORS Anywhere](https://cors-anywhere.herokuapp.com/), que atua como um middleware para permitir as requisições.
+
+### Como ativar o CORS Anywhere:
+
+1. Acesse o site [CORS Anywhere](https://cors-anywhere.herokuapp.com/).
+2. Clique no botão **"Request temporary access to the demo server"** para habilitar o proxy.
+3. Após ativar, você poderá usar a aplicação normalmente no navegador.
+
+### Por que isso é necessário?
+
+A API consumida atualmente não possui os cabeçalhos CORS configurados para permitir acesso direto a partir de navegadores. O `CORS Anywhere` é uma solução temporária para contornar essa limitação.
+
+> **Nota:** Essa configuração é apenas para fins de teste ou desenvolvimento. Para um ambiente de produção, o ideal seria que a API fosse ajustada para suportar CORS diretamente.
+
+
 # 👉 Confira o projeto em ação: 
 <a href="#" target="_blank" >LINK DA PÁGINA</a>

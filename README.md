@@ -1,31 +1,82 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# Teste para Estágio Frontend - Econverse
 
-### Vem ser #Econverse!
+Este repositório contém o teste técnico para a vaga de estágio Frontend na **Econverse**, desenvolvido com **React**, **TypeScript** e **SASS**.
 
-Segue abaixo as instruções para a execução do teste.
+## Requisitos
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn**
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+## Instalação
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+1. Clone o repositório:
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+   ```bash
+   git clone "https://github.com/willsf2021/teste-front-end"
 
-**Boa sorte! ;)**
+   ```
+
+2. Acesse o diretório do projeto:
+   ```bash
+   cd <NOME_DO_DIRETORIO>
+   ```
+3. Instale as dependências:
+
+- Com yarn
+  ```bash
+  yarn install
+  ```
+- Com npm
+  ```bash
+  npm install
+  ```
+
+## Rodando o Projeto
+
+### Para rodar o projeto em modo de desenvolvimento
+
+- Com yarn
+  ```bash
+  yarn dev
+  ```
+- Com npm
+  ```bash
+  npm run dev
+  ```
+
+#### A aplicação estará disponível em http://localhost:3000.
+
+## Compilando para Produção
+
+### Para gerar a versão de produção:
+
+- Com yarn
+  ```bash
+  yarn build
+  ```
+- Com npm
+  ```bash
+  npm run build
+  ```
+
+#### Os arquivos de produção estarão na pasta dist/.
+
+## Observação Importante sobre o Fetch de Dados
+
+Este projeto consome dados de uma API externa que possui restrições de **CORS**. Para resolver esse problema, utilizei o serviço [CORS Anywhere](https://cors-anywhere.herokuapp.com/), que atua como um middleware para permitir as requisições.
+
+### Como ativar o CORS Anywhere:
+
+1. Acesse o site [CORS Anywhere](https://cors-anywhere.herokuapp.com/).
+2. Clique no botão **"Request temporary access to the demo server"** para habilitar o proxy.
+3. Após ativar, você poderá usar a aplicação normalmente no navegador.
+
+### Por que isso é necessário?
+
+A API consumida atualmente não possui os cabeçalhos CORS configurados para permitir acesso direto a partir de navegadores. O `CORS Anywhere` é uma solução temporária para contornar essa limitação.
+
+> **Nota:** Essa configuração é apenas para fins de teste ou desenvolvimento. Para um ambiente de produção, o ideal seria que a API fosse ajustada para suportar CORS diretamente.
+
+
+# 👉 Confira o projeto em ação: 
+<a href="#" target="_blank" >LINK DA PÁGINA</a>

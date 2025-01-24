@@ -41,7 +41,7 @@ const Carousel: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
+          "https://cors-anywhere.herokuapp.com/https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json"
         );
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`);

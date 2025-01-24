@@ -14,12 +14,18 @@ const CategoryItem: React.FC<CategoryItemProps> = ({
   isSelected,
   onClick,
 }) => (
-  <div className={styles.categoryItemContainer} onClick={onClick}>
-    <div className={`${styles.svgContainer} ${isSelected && styles.selected}`}>
-      {svg}
-    </div>
+  <button
+    type="button"
+    className={`${styles.categoryItemContainer} ${
+      isSelected ? styles.selected : ""
+    }`}
+    onClick={onClick}
+    aria-pressed={isSelected}
+    aria-label={`Selecionar categoria ${categoryName}`}
+  >
+    <div className={styles.svgContainer}>{svg}</div>
     <p className={isSelected ? styles.selectedText : ""}>{categoryName}</p>
-  </div>
+  </button>
 );
 
 export default CategoryItem;

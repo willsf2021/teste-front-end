@@ -5,6 +5,8 @@ import CategoryContainer from "./components/CategoryContainer";
 import Showcase from "./components/Showcase";
 import PartnersContainer from "./components/PartnersContainer";
 import BrandsContainer from "./components/BrandsContainer";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   return (
@@ -19,6 +21,8 @@ const App: React.FC = () => {
       <PartnersContainer />
       <BrandsContainer />
       <Showcase list={false} />
+      <Form />
+      <Footer />
     </>
   );
 };

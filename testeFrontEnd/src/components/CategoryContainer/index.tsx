@@ -10,7 +10,8 @@ const CategoryContainer: React.FC = () => {
   };
 
   return (
-    <aside className={styles.categoryContainer}>
+    <nav className={styles.categoryContainer}>
+      <h2 className="visually-hidden">Categorias</h2>
       <CategoryItem
         svg={
           <svg
@@ -616,7 +617,7 @@ c4 -76 -6 -86 -85 -82 -58 3 -58 3 -61 62 -4 86 -3 87 75 84 68 -3 68 -3 71
         isSelected={selectedCategory === "Moda"}
         onClick={() => handleCategoryClick("Moda")}
       />
-    </aside>
+    </nav>
   );
 };
 

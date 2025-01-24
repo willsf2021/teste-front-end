@@ -9,8 +9,10 @@ export default defineConfig({
       '/api': {
         target: 'https://app.econverse.com.br',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''), // Remove o prefixo '/api'
+        rewrite: (path) => path.replace(/^\/api/, ''),
+
       },
     },
   },
+  base: '/teste-front-end/'
 })

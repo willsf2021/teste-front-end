@@ -1,0 +1,114 @@
+@use "../../styles/variables.scss";
+
+.container {
+  background-color: variables.$dark-purple;
+  display: flex;
+  padding: 40px 0px;
+  column-gap: 124px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  .title {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  h3 {
+    color: variables.$pure-white;
+    font: variables.$font-weight-semi-bold variables.$font-size-xlg
+      variables.$font-family-outfit;
+    line-height: 38.4px;
+  }
+  p {
+    color: variables.$pure-white;
+    font-size: variables.$font-size-md;
+    font-weight: variables.$font-weight-light;
+    max-width: 515px;
+    line-height: 18px;
+  }
+
+  fieldset {
+    border: none;
+    display: flex;
+    column-gap: 8px;
+    input:not(input[type="checkbox"]) {
+      height: 42px;
+      width: 233px;
+      border-radius: 8px;
+      border: 1px solid variables.$border-input;
+      outline: none;
+      padding: 12px 24px;
+    }
+
+    button {
+      width: 157px;
+      height: 42px;
+      border-radius: 8px;
+      background-color: variables.$accent-yellow;
+      color: variables.$dark-purple;
+      font-size: variables.$font-size-g;
+      font-weight: variables.$font-weight-semi-bold;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: variables.$dark-purple;
+        color: variables.$accent-yellow;
+        transition: background-color 300ms ease-in-out;
+      }
+    }
+  }
+
+  .customCheckbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: variables.$font-size-md;
+    font-weight: variables.$font-weight-regular;
+    color: variables.$pure-white;
+    line-height: 21px;
+    margin-top: 8px;
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .checkboxBox {
+      width: 15px;
+      height: 15px;
+      border: 1px solid variables.$border-color-checkbox;
+      border-radius: 1px;
+      display: inline-block;
+      position: relative;
+      margin-right: 4px;
+      background-color: variables.$pure-white;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+      &:after {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: variables.$pure-white;
+        font-size: variables.$font-size-sm;
+        content: "✔";
+        position: absolute;
+        top: 1.6px;
+        left: 1.3px;
+        width: 11px;
+        height: 11px;
+        background-color: variables.$border-color-checkbox;
+        border-radius: 1px;
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+      }
+    }
+
+    input[type="checkbox"]:checked + .checkboxBox {
+      &:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}

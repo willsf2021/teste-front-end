@@ -7,6 +7,10 @@
   background-color: transparent;
   // row-gap: 24px;
   align-items: center;
+
+  nav li {
+    transition: font-weight 300ms ease-in-out;
+  }
   .title {
     display: flex;
     width: 1138px;

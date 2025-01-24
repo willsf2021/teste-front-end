@@ -14,7 +14,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ list }) => {
         <div className={styles.divisor}></div>
       </div>
       {list ? (
-        <nav>
+        <nav aria-label="Categorias de produtos">
           <ul>
             <li>CELULAR</li>
             <li>ACESSÓRIOS</li>
@@ -25,7 +25,12 @@ const Showcase: React.FC<ShowcaseProps> = ({ list }) => {
           </ul>
         </nav>
       ) : (
-        <a className={styles.viewAll}>Ver todos</a>
+        <a
+          className={styles.viewAll}
+          aria-label="Ver todos os produtos relacionados"
+        >
+          Ver todos
+        </a>
       )}
       <Carousel />
     </article>

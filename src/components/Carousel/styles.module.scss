@@ -15,6 +15,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+  
 }
 
 .wrapper {
@@ -233,5 +234,31 @@
   img {
     width: 15px;
     height: 13px;
+  }
+}
+
+
+@media (max-width: 1340px) {
+  .carousel {
+    max-width: 900px;
+  }
+}
+@media (max-width: 1024px) {
+  .carousel {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 304px;
+    
+  }
+  .buttonLeft{
+    margin-right: -8px;
+  } 
+  .buttonRight {
+    margin-left: 16px;
+    transform: rotate(180deg);
+    box-shadow: 0px -4px 4px 0px variables.$box-shadow-22;
   }
 }

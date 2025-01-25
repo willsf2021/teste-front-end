@@ -21,6 +21,7 @@
       variables.$blackOpacity 85%
     );
     height: 100%;
+
     h1 {
       font-size: variables.$font-size-xxlg;
       font-weight: variables.$font-weight-semi-bold;
@@ -31,6 +32,7 @@
     p {
       font-size: variables.$font-size-xlg;
       font-weight: variables.$font-weight-regular;
+
       span {
         font-weight: variables.$font-weight-bold;
         color: variables.$accent-yellow;
@@ -55,6 +57,98 @@
         background-color: variables.$dark-purple;
         color: variables.$accent-yellow;
         transition: background-color 300ms ease-in-out;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .heroSection {
+    height: 320px;
+    background-position: center;
+
+    .heroTitle {
+      padding: 64px 0px 0px 40px;
+      width: 100%;
+      row-gap: 8px;
+      h1 {
+        font-size: variables.$font-size-xlg;
+        line-height: 44px;
+        max-width: 400px;
+      }
+
+      p {
+        font-size: variables.$font-size-g;
+      }
+
+      a {
+        width: 120px;
+        height: 32px;
+        font-size: variables.$font-size-sm;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 280px;
+
+    .heroTitle {
+      padding: 48px 16px 0px;
+      text-align: center;
+      width: 100%;
+      row-gap: 16px;
+      align-items: center;
+      h1 {
+        font-size: variables.$font-size-xgg;
+        line-height: 38px;
+        max-width: 600px;
+      }
+
+      p {
+        font-size: variables.$font-size-g;
+      }
+
+      a {
+        width: 160px;
+        height: 40px;
+        font-size: variables.$font-size-sm;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 240px;
+    display: flex;
+    
+    .heroTitle {
+      padding: 32px 8px 0px;
+      row-gap: 12px;
+      align-items: center;
+      background: linear-gradient(
+      to left,
+      transparent 0%,
+      variables.$blackOpacity 70%
+    );
+      h1 {
+        font-size: variables.$font-size-xgg;
+        line-height: 32px;
+      }
+
+      p {
+        font-size: variables.$font-size-gg;
+      }
+
+      a {
+        width: 140px;
+        height: 36px;
+        margin: 0;
+        font-size: variables.$font-size-md;
       }
     }
   }

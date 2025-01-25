@@ -29,6 +29,7 @@ $font-family-outfit: "Outfit", sans-serif;
 $font-family-work-sans: "Work Sans", sans-serif;
 
 // Tamanhos de Fonte
+$font-size-mobile: 8px;
 $font-size-10: 10px;
 $font-size-11: 11px;
 $font-size-sm: 12px;
@@ -47,3 +48,18 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
+
+$breakpoints: (
+  "lg": 1024px,
+  "md": 768px,
+  "sm": 480px,
+);
+
+@mixin respond-to($size) {
+  $width: map-get($breakpoints, $size);
+  @if $width {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+}

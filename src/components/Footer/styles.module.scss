@@ -3,6 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  
   .topFooter {
     display: flex;
     padding-left: 80px;
@@ -10,11 +11,14 @@
     align-items: center;
     background-color: variables.$box-gray;
     padding: 42px 0px 42px 80px;
+    flex-wrap: wrap; /* Para suportar a reorganização do layout em telas menores */
+    
     .rightTopFooter {
       img.logo {
         width: 164px;
         margin-bottom: 18px;
       }
+
       p {
         max-width: 354px;
         margin-bottom: 27px;
@@ -55,6 +59,7 @@
           font-weight: variables.$font-weight-regular;
         }
       }
+
       ul li span {
         font-size: variables.$font-size-g;
         font-weight: variables.$font-weight-bold;
@@ -70,6 +75,88 @@
       font-size: variables.$font-size-md1;
       color: variables.$dark-gray;
       line-height: 19.5px;
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .topFooter {
+      padding-left: 40px;
+      padding-right: 40px;
+      
+      .rightTopFooter {
+        text-align: center;
+        p {
+          max-width: none;
+        }
+      }
+
+      .divisor {
+        display: none;
+      }
+
+      .leftTopFooter {
+        padding-left: 0;
+        display: block;
+        ul {
+          text-align: center;
+        }
+      }
+    }
+
+    .bottomFooter {
+      padding: 20px 0px;
+      p {
+        font-size: variables.$font-size-sm;
+      }
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .topFooter {
+      padding-left: 30px;
+      padding-right: 30px;
+      .rightTopFooter {
+        text-align: center;
+        p {
+          max-width: none;
+        }
+      }
+
+      .divisor {
+        display: none;
+      }
+
+      .leftTopFooter {
+        padding-top: 24px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        font-size: variables.$font-size-sm;
+        ul {
+          text-align: center;
+        }
+      }
+    }
+
+    .bottomFooter {
+      padding: 20px 0px;
+      p {
+        font-size: variables.$font-size-sm;
+      }
+    }
+    .socialMediaLinks {
+      display: flex;
+      column-gap: 26px;
+      align-items: center;
+      justify-content: center;
+      flex:1;
+      a:hover {
+        transition: transform 300ms ease-in-out;
+        transform: scale(1.08);
+      }
     }
   }
 }

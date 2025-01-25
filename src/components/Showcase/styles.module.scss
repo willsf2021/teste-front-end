@@ -5,19 +5,19 @@
   flex-direction: column;
   color: variables.$dark-gray;
   background-color: transparent;
-  // row-gap: 24px;
   align-items: center;
 
   nav li {
     transition: font-weight 300ms ease-in-out;
   }
+
   .title {
     display: flex;
     width: 1138px;
     align-items: center;
     column-gap: 34px;
     margin-bottom: 2px;
-    // background-color: red;
+
     h2 {
       font-weight: variables.$font-weight-bold;
       font-size: variables.$font-size-xgg;
@@ -27,6 +27,7 @@
       line-height: 46px;
     }
   }
+
   .divisor {
     height: 1px;
     width: 100%;
@@ -54,11 +55,31 @@
       }
     }
   }
+
+  .viewAll {
+    font-size: variables.$font-size-mdg;
+    font-weight: variables.$font-weight-bold;
+    margin: 4px 0px 24px;
+    cursor: pointer;
+  }
 }
 
-.viewAll {
-  font-size: variables.$font-size-mdg;
-  font-weight: variables.$font-weight-bold;
-  margin: 4px 0px 24px;
-  cursor: pointer;
+
+@media (max-width: 768px) {
+  .showcaseContainer {
+    .title {
+      width: 100%;
+      h2 {
+        text-align: center;
+        font-size: variables.$font-size-xgg;
+        line-height: 36px; 
+        min-width: auto; 
+        margin-bottom: 16px;
+      }
+    }
+
+    nav {
+      display: none;
+    }
+  }
 }

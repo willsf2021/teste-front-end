@@ -7,4 +7,10 @@
   width: 100%;
   justify-content: center;
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 64px 0px;
+    row-gap: 13px;
+    padding: 24px;
+  }
 }

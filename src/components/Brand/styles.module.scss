@@ -19,3 +19,12 @@
     width: 117px;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    width: 160px;
+    height: 160px;
+    img {
+      width: 80px;
+    }
+  }
+}

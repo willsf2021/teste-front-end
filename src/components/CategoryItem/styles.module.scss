@@ -1,3 +1,4 @@
+// styles.module.scss
 @use "../../styles/variables.scss";
 
 .categoryItemContainer {
@@ -18,9 +19,11 @@
     font-weight: variables.$font-weight-semi-bold;
   }
   p {
+    font-size: variables.$font-size-md;
     font-weight: variables.$font-weight-medium;
   }
 }
+
 .svgContainer {
   padding: 34px 34px 33px 33px;
   background-color: variables.$box-gray;
@@ -30,6 +33,19 @@
   &:hover {
     transition: all 300ms ease-in-out;
     background-color: variables.$pure-white;
+  }
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    svg {
+      width: 40px;
+      height: auto;
+    }
   }
 }
 
@@ -44,4 +60,8 @@
 .selectedText {
   color: variables.$secondary-blue;
   font-weight: variables.$font-weight-semi-bold !important;
+
+  @media (max-width: 768px) {
+    font-size: variables.$font-size-md;
+  }
 }

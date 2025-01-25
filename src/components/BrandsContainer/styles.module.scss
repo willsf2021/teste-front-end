@@ -2,19 +2,51 @@
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   row-gap: 32px;
   padding-bottom: 90px;
+
   h2 {
     font-weight: variables.$font-weight-bold;
     font-size: variables.$font-size-xgg;
     color: variables.$secondary-blue;
     text-align: center;
   }
+
   .logos {
     display: flex;
+    flex-wrap: wrap; 
     align-items: center;
     justify-content: center;
-    column-gap: 42px;
+    column-gap: 42px; 
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    .logos {
+      column-gap: 30px; 
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    .logos {
+      column-gap: 20px; 
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    .logos {
+      flex-direction: column; 
+      row-gap: 20px; 
+      align-items: center;
+    }
   }
 }

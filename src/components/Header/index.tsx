@@ -12,7 +12,7 @@ import logo from "../../assets/logo.png";
 
 const Header: React.FC = () => (
   <header className={styles.header}>
-    {/* Topo do header */}
+    
     <div className={styles.topHeader}>
       <div className={styles.item}>
         <img src={shieldCheck} alt="Compra 100% segura" />

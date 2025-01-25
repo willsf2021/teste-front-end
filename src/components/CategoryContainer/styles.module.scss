@@ -2,13 +2,13 @@
 
 .categoryContainer {
   display: flex;
-  flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
+  flex-wrap: wrap; 
   justify-content: center;
   column-gap: 42px;
   width: 100%;
   margin: 39px 0px 90px 0px;
 
-  /* Mantém os itens flex até 1024px */
+
   @media (max-width: 1024px) {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +16,7 @@
     column-gap: 42px;
   }
 
-  /* Muda para grid após 1024px */
+
   @media (max-width: 1024px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -29,6 +29,6 @@
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 por linha */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }

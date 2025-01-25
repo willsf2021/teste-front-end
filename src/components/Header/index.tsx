@@ -36,7 +36,7 @@ const Header: React.FC = () => (
 
     <div className={styles.divisor}></div>
 
-    {/* Parte central com logo e busca */}
+ 
     <div className={styles.midHeader}>
       <img src={logo} className={styles.logo} alt="Logo da loja" />
 
@@ -59,7 +59,7 @@ const Header: React.FC = () => (
 
     <div className={styles.divisor}></div>
 
-    {/* Menu inferior */}
+ 
     <nav className={styles.bottomHeader}>
       <ul>
         <li>

@@ -104,8 +104,8 @@ const Carousel: React.FC = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.buttonLeft} onClick={handleLeftClick}>
-        <button>
-          <img src={arrow} alt="Rolar a esquerda" />
+        <button className={styles.left}>
+          <img className={styles.left} src={arrow} alt="Rolar a esquerda" />
         </button>
       </div>
       <div className={styles.carousel} ref={carousel}>
@@ -151,7 +151,7 @@ const Carousel: React.FC = () => {
         })}
       </div>
       <div className={styles.buttonRight} onClick={handleRightClick}>
-        <button>
+        <button className={styles.right}>
           <img src={arrow} alt="Rolar a direita" />
         </button>
       </div>

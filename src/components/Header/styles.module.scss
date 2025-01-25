@@ -163,10 +163,15 @@
         column-gap: 24px;
       }
     }
+    
   }
 }
 
 @media (max-width: 768px) {
+  .bottomHeader ul {
+    flex-direction: column;
+    row-gap: 24px;
+  }
   .header {
     padding: 0px 24px;
     display: flex;

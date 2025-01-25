@@ -15,9 +15,12 @@
   &::-webkit-scrollbar {
     display: none;
   }
-  
 }
-
+.right,
+.left {
+  width: auto;
+  margin: 0px;
+}
 .wrapper {
   position: relative;
   display: flex;
@@ -28,7 +31,6 @@
 
 .buttonLeft,
 .buttonRight {
-  // position: absolute;
   box-shadow: 0px 4px 4px 0px variables.$box-shadow-22;
   background-color: variables.$pure-white;
   height: 32px;
@@ -128,8 +130,18 @@
   align-items: center;
   column-gap: 87px;
   padding: 0px 51px 0px 56px;
+  @media (max-width: 768px) {
+    width: 326px;
+    flex-direction: column;
+    padding: 24px;
+    row-gap: 24px;
+  }
 
   .rightSide {
+    @media (max-width: 768px) {
+      row-gap: 24px;
+      max-width: 100%;
+    }
     display: flex;
     flex-direction: column;
     row-gap: 32px;
@@ -138,6 +150,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 18px;
+    @media (max-width: 768px) {
+      row-gap: 8px;
+    }
   }
 
   h3 {
@@ -147,6 +162,7 @@
     letter-spacing: 5%;
     line-height: 100%;
     text-transform: uppercase;
+  
   }
 
   .price {
@@ -182,6 +198,11 @@
     column-gap: 12px;
     align-items: center;
     .increaseDecrease {
+      button {
+        @media (max-width: 768px) {
+          margin: 0px;
+        }
+      }
       display: flex;
       align-items: center;
       justify-content: center;
@@ -190,6 +211,7 @@
       height: 36px;
       border: 1px solid variables.$border-increase-decrease;
       border-radius: 4px;
+
       img {
         margin-top: 4px;
       }
@@ -224,19 +246,19 @@
 
 .popupImage {
   margin: 56.48px 0px 50.58px 0px;
+  
 }
 
 .closeButton {
   cursor: pointer;
   position: absolute;
   top: 17px;
-  right: 29px;
+  right: -112px;
   img {
     width: 15px;
     height: 13px;
   }
 }
-
 
 @media (max-width: 1340px) {
   .carousel {
@@ -251,11 +273,10 @@
 @media (max-width: 768px) {
   .carousel {
     max-width: 304px;
-    
   }
-  .buttonLeft{
+  .buttonLeft {
     margin-right: -8px;
-  } 
+  }
   .buttonRight {
     margin-left: 16px;
     transform: rotate(180deg);
